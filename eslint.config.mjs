@@ -27,6 +27,43 @@ export default [
           ],
         },
       ],
+      'vue/multi-word-component-names': 'off',
+      'vue/max-attributes-per-line': [
+        'error',
+        {
+          singleline: 1,
+          multiline: 1
+        }
+      ],
+      'vue/html-closing-bracket-newline': [
+        'error',
+        {
+          singleline: 'never',
+          multiline: 'always'
+        }
+      ],
+      'vue/html-self-closing': [
+        'error',
+        {
+          html: {
+            void: 'always',
+            normal: 'never',
+            component: 'always'
+          }
+        }
+      ],
+      'vue/singleline-html-element-content-newline': 'off',
+      'vue/component-name-in-template-casing': [
+        'error',
+        'PascalCase',
+      ],
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_'
+        }
+      ]
     },
   },
   {
