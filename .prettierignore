@@ -1,5 +1,19 @@
 # Add files here to ignore them from prettier formatting
 /dist
+/build
+/node_modules
 /coverage
+/.nx
 /.nx/cache
 /.nx/workspace-data
+/storybook-static
+/pnpm-lock.yaml
+*.min.js
+*.min.css
+*.bundle.js
+*.bundle.css
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
