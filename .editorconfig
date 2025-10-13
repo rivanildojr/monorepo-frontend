@@ -7,7 +7,20 @@ indent_style = space
 indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
+end_of_line = lf
 
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false
+
+[*.{js,jsx,ts,tsx,vue}]
+indent_size = 2
+max_line_length = 80
+quote_type = single
+
+[*.{json,yml,yaml}]
+indent_size = 2
+indent_style = space
+
+[*.{gitignore,npmignore,prettierignore,eslintignore}]
+insert_final_newline = false
