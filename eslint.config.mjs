@@ -57,13 +57,30 @@ export default [
         'error',
         'PascalCase',
       ],
+      'vue/require-default-prop': 'off',
+      'vue/no-v-html': 'warn',
+      'vue/component-api-style': ['error', ['script-setup', 'composition']],
+      'vue/block-order': [
+        'error',
+        {
+          order: ['template', 'script', 'style']
+        }
+      ],
       '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-non-null-assertion': 'warn',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
-          argsIgnorePattern: '^_'
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
         }
-      ]
+      ],
+      'no-console': {
+        allow: ['warn', 'error'],
+      },
+      'no-debugger': 'error',
+      'prefer-const': 'error',
+      'no-var': 'error',
     },
   },
   {
@@ -80,4 +97,10 @@ export default [
     // Override or add rules here
     rules: {},
   },
+  {
+    files: ["**/*.spec.ts", "**/*.test.ts"],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+    }
+  }
 ];
