@@ -1,0 +1,10 @@
+{
+  "name": "@monorepo-frontend/cvcrm-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@monorepo-frontend/cvcrm"
+    ]
+  }
+}
