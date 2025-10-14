@@ -2,12 +2,42 @@
   "name": "@monorepo-frontend/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint . && stylelint \"**/*.{css,scss}\" && markdownlint \"**/*.md\"",
+    "lint:fix": "eslint . --fix && stylelint \"**/*.{css,scss}\" --fix && markdownlint \"**/*.md\" --fix",
+    "format": "prettier --write \"**/*.{js,ts,vue,json,md,yml,yaml,css,scss}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,vue,json,md,yml,yaml,css,scss}\"",
+    "type-check": "vue-tsc --noEmit",
+    "lint:all": "nx run-many -t lint",
+    "lint:affected": "nx affected -t lint",
+    "test:all": "nx run-many -t test",
+    "test:affected": "nx affected -t test"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.md": [
+      "markdownlint --fix",
+      "prettier --write"
+    ],
+    "*.{json,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
   "private": true,
   "dependencies": {
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "@eslint/js": "^9.8.0",
     "@nx/cypress": "21.6.4",
     "@nx/eslint": "21.6.4",
@@ -33,8 +63,10 @@
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-cypress": "^3.5.0",
     "eslint-plugin-vue": "^9.16.1",
+    "husky": "^9.1.7",
     "jiti": "2.4.2",
     "jsdom": "~22.1.0",
+    "lint-staged": "^16.2.4",
     "markdownlint-cli": "^0.45.0",
     "nx": "21.6.4",
     "prettier": "^2.6.2",
