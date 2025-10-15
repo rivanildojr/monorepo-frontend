@@ -20,8 +20,8 @@
       "prettier --write"
     ],
     "*.{css,scss}": [
-      "prettier --write",
-      "stylelint --fix"
+      "stylelint --fix",
+      "prettier --write"
     ],
     "*.md": [
       "markdownlint --fix",

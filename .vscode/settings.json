@@ -3,7 +3,8 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": true
   },
   "editor.tabSize": 2,
   "editor.rulers": [80],
@@ -33,6 +34,7 @@
 
   // Prettier
   "prettier.requireConfig": true,
+  "prettier.prettierPath": "./node_modules/prettier",
 
   // TypeScript
   "typescript.tsdk": "node_modules/typescript/lib",
