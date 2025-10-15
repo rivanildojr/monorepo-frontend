@@ -10,11 +10,13 @@ import baseConfig from '../../eslint.config.mjs';
 export default [
   ...baseConfig,
   ...pluginVue.configs['flat/recommended'],
-  ...tsEslint.configs.recommended,
+  tsEslint.configs,
   eslintConfigPrettier,
   {
     ignores: ['**/dist/**', '**/node_modules/**', '**/*.config.*.timestamp*'],
   },
+
+  // Configuração para arquivos Vue
   {
     files: ['*.vue', '**/*.vue'],
     languageOptions: {
@@ -22,7 +24,6 @@ export default [
       parserOptions: {
         parser: tsParser,
         sourceType: 'module',
-        tsconfigRootDir: __dirname,
         project: './tsconfig.app.json',
         ecmaFeatures: {
           jsx: true,
@@ -31,7 +32,7 @@ export default [
       },
     },
     plugins: {
-      vue,
+      vueParser,
       '@typescript-eslint': tsEslint,
     },
     rules: {

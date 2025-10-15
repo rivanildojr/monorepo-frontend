@@ -24,6 +24,8 @@ export default [
       '**/.vscode/*',
     ],
   },
+
+  // Configuração para arquivos TypeScript e JavaScript
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     rules: {
@@ -60,6 +62,8 @@ export default [
       'no-var': 'error',
     },
   },
+
+  // Configuração para arquivos de teste
   {
     files: ['**/*.spec.ts', '**/*.test.ts'],
     rules: {
