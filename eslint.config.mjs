@@ -9,10 +9,23 @@ export default [
       '**/dist',
       '**/vite.config.*.timestamp*',
       '**/vitest.config.*.timestamp*',
+      '**/node_modules',
+      '**/build',
+      '**/.nx',
+      '**/.nx/cache',
+      '**/.nx/workspace-data',
+      '**/coverage',
+      '**/storybook-static',
+      '**/pnpm-lock.yaml',
+      '**/*.min.js',
+      '**/*.min.css',
+      '**/*.bundle.js',
+      '**/*.bundle.css',
+      '**/.vscode/*',
     ],
   },
   {
-    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx', '**/*.vue'],
+    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     rules: {
       '@nx/enforce-module-boundaries': [
         'error',
@@ -46,20 +59,6 @@ export default [
       'prefer-const': 'error',
       'no-var': 'error',
     },
-  },
-  {
-    files: [
-      '**/*.ts',
-      '**/*.tsx',
-      '**/*.cts',
-      '**/*.mts',
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.cjs',
-      '**/*.mjs',
-    ],
-    // Override or add rules here
-    rules: {},
   },
   {
     files: ['**/*.spec.ts', '**/*.test.ts'],

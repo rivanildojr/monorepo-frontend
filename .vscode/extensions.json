@@ -3,8 +3,9 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "vue.volar",
-    "vue.vscode-typescript-vue-plugin",
-    "editorconfig.editorconfig"
+    "Vue.volar",
+    "EditorConfig.EditorConfig",
+    "stylelint.vscode-stylelint",
+    "DavidAnson.vscode-markdownlint"
   ]
 }

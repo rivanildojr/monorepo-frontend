@@ -8,7 +8,7 @@ module.exports = {
         groupName: 'Display',
         emptyLineBefore: 'never',
         properties: [
-          'display'
+          'display',
 
           // Flexbox
           'flex',
@@ -39,7 +39,7 @@ module.exports = {
           'grid-column',
           'grid-row',
           'grid-area',
-        ]
+        ],
       },
 
       // 2. Positioning
@@ -55,7 +55,7 @@ module.exports = {
           'z-index',
           'float',
           'clear',
-        ]
+        ],
       },
 
       // 3. Box Model
@@ -122,7 +122,7 @@ module.exports = {
           'overflow',
           'overflow-x',
           'overflow-y',
-        ]
+        ],
       },
 
       // 4. Colors & Typography
@@ -164,8 +164,8 @@ module.exports = {
           'text-overflow',
           'text-shadow',
           'vertical-align',
-        ]
-      }
+        ],
+      },
 
       // 5. Others
       {
@@ -213,8 +213,8 @@ module.exports = {
           'list-style-position',
           'list-style-image',
           'table-layout',
-        ]
-      }
+        ],
+      },
     ],
     'selector-class-pattern': '^[a-z][a-zA-Z0-9-]*$',
     'color-hex-length': 'short',
@@ -223,8 +223,16 @@ module.exports = {
     'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['use', 'forward', 'mixin', 'include', 'extend', 'apply', 'layer']
-      }
+        ignoreAtRules: [
+          'use',
+          'forward',
+          'mixin',
+          'include',
+          'extend',
+          'apply',
+          'layer',
+        ],
+      },
     ],
   },
-}
+};
