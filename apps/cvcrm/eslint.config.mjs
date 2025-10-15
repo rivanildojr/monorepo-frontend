@@ -3,6 +3,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import tsParser from '@typescript-eslint/parser';
 import tsEslint from '@typescript-eslint/eslint-plugin';
 import vueParser from 'vue-eslint-parser';
+import globals from 'globals';
 
 import baseConfig from '../../eslint.config.mjs';
 
