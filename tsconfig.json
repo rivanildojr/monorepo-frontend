@@ -5,6 +5,9 @@
   "references": [
     {
       "path": "./apps/cvcrm"
+    },
+    {
+      "path": "./libs/core"
     }
   ]
 }

@@ -160,7 +160,13 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(typescript@5.9.3)
 
-  apps/cvcrm: {}
+  apps/cvcrm:
+    dependencies:
+      '@monorepo-frontend/core':
+        specifier: workspace:*
+        version: link:../../libs/core
+
+  libs/core: {}
 
 packages:
 

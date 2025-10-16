@@ -1,13 +1,16 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "dist",
+    "baseUrl": ".",
+    "noEmit": true,
     "types": ["vite/client"],
-    "rootDir": "src",
     "jsx": "preserve",
     "jsxImportSource": "vue",
     "resolveJsonModule": true,
-    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
+    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+    "paths": {
+      "@/cvcrm/*": ["./src/*"]
+    }
   },
   "exclude": [
     "out-tsc",
@@ -30,5 +33,16 @@
     "eslint.config.cjs",
     "eslint.config.mjs"
   ],
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.vue"]
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "../../libs/**/*"
+  ],
+  "references": [
+    {
+      "path": "../../libs/core/tsconfig.lib.json"
+    }
+  ]
 }

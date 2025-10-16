@@ -16,6 +16,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@monorepo-frontend/source"]
+    "customConditions": ["@monorepo-frontend/source"],
+    "baseUrl": "./",
+    "paths": {
+      "@monorepo-frontend/core": ["libs/core/src/index.ts"]
+    }
   }
 }

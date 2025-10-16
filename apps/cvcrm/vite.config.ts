@@ -1,6 +1,7 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import path from 'path';
 
 export default defineConfig(() => ({
   root: __dirname,
@@ -36,6 +37,12 @@ export default defineConfig(() => ({
     coverage: {
       reportsDirectory: './test-output/vitest/coverage',
       provider: 'v8' as const,
+    },
+  },
+  resolve: {
+    alias: {
+      '@/cvcrm': path.resolve(__dirname, './src'),
+      '@monorepo-frontend/core': path.resolve(__dirname, '../../libs/core/src'),
     },
   },
 }));
