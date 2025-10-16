@@ -45,4 +45,11 @@ export default defineConfig(() => ({
       '@monorepo-frontend/core': path.resolve(__dirname, '../../libs/core/src'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+      },
+    },
+  },
 }));

@@ -1,1 +1,3 @@
-export { toasPlugin, useToast } from './Toast';
+export { toastPlugin, useToast } from './Toast';
+
+export { bootstrapPlugin, useBootstrap } from './Bootstrap';

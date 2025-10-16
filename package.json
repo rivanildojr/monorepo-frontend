@@ -33,6 +33,9 @@
   },
   "private": true,
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.12.2",
+    "bootstrap": "^5.3.8",
     "vue": "^3.5.22",
     "vue-toastification": "2.0.0-rc.5"
   },

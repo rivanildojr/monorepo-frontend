@@ -1,7 +1,10 @@
 import type { App } from 'vue';
 
-import { toasPlugin } from '@monorepo-frontend/core';
+import { toastPlugin } from '@monorepo-frontend/core';
+
+import { bootstrapPlugin } from '@monorepo-frontend/core';
 
 export function registerPlugins(app: App) {
-  app.use(toasPlugin);
+  app.use(toastPlugin);
+  app.use(bootstrapPlugin);
 }

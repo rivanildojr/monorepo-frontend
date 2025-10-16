@@ -21,7 +21,7 @@ const defaultOptions: PluginOptions = {
   transition: 'Vue-Toastification__fade',
 };
 
-export const toasPlugin = {
+export const toastPlugin = {
   install(app: App, options?: PluginOptions) {
     app.use(Toast, { ...defaultOptions, ...options });
   },
