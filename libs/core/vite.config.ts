@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig(() => ({
   root: __dirname,
@@ -18,6 +19,11 @@ export default defineConfig(() => ({
     coverage: {
       reportsDirectory: './test-output/vitest/coverage',
       provider: 'v8' as const,
+    },
+  },
+  resolve: {
+    alias: {
+      '@/core': path.resolve(__dirname, './src'),
     },
   },
 }));
