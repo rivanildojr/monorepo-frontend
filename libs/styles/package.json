@@ -1,0 +1,35 @@
+{
+  "name": "@monorepo-frontend/styles",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/main.scss",
+      "require": "./src/main.scss"
+    },
+    "./core": {
+      "import": "./src/core.scss",
+      "require": "./src/core.scss"
+    },
+    "./components-only": {
+      "import": "./src/components-only.scss",
+      "require": "./src/components-only.scss"
+    },
+    "./components": {
+      "import": "./src/6-components/*.scss",
+      "require": "./src/6-components/*.scss"
+    },
+    "./settings": {
+      "import": "./src/1-settings/_index.scss",
+      "require": "./src/1-settings/_index.scss"
+    },
+    "./tools": {
+      "import": "./src/2-tools/_index.scss",
+      "require": "./src/2-tools/_index.scss"
+    }
+  },
+  "dependencies": {}
+}

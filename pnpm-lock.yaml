@@ -195,10 +195,15 @@ importers:
       '@monorepo-frontend/icons':
         specifier: workspace:*
         version: link:../../libs/icons
+      '@monorepo-frontend/styles':
+        specifier: workspace:*
+        version: link:../../libs/styles
 
   libs/core: {}
 
   libs/icons: {}
+
+  libs/styles: {}
 
 packages:
 

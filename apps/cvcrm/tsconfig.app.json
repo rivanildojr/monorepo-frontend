@@ -42,6 +42,9 @@
   ],
   "references": [
     {
+      "path": "../../libs/styles/tsconfig.lib.json"
+    },
+    {
       "path": "../../libs/icons/tsconfig.lib.json"
     },
     {

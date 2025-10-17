@@ -1,3 +1,5 @@
+@use '@monorepo-frontend/styles/core' as *;
+
 html {
   text-size-adjust: 100%;
 
@@ -48,7 +50,7 @@ pre {
 
 h1,
 h2 {
-  font-size: inherit;
+  font-size: $font-size-xs;
   font-weight: inherit;
 }
 
@@ -61,4 +63,9 @@ pre {
   font-family:
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
+}
+
+.teste {
+  color: $cor-marca-primaria-100;
+  font-size: $font-size-xs;
 }

@@ -20,7 +20,8 @@
     "baseUrl": "./",
     "paths": {
       "@monorepo-frontend/core": ["libs/core/src/index.ts"],
-      "@monorepo-frontend/icons": ["libs/icons/src/index.ts"]
+      "@monorepo-frontend/icons": ["libs/icons/src/index.ts"],
+      "@monorepo-frontend/styles": ["libs/styles/src"]
     }
   }
 }

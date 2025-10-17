@@ -1,4 +1,6 @@
 <template>
+  <h1 class="teste">Welcome to @monorepo-frontend/cvcrm!</h1>
+
   <button
     type="button"
     class="btn btn-primary"

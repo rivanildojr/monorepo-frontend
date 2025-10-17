@@ -3,6 +3,8 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
 import svgLoader from 'vite-svg-loader';
+// No vite.config.ts, adicione:
+console.log('Styles path:', path.resolve(__dirname, '../../libs/styles/src'));
 
 export default defineConfig(() => ({
   root: __dirname,
@@ -48,12 +50,20 @@ export default defineConfig(() => ({
         __dirname,
         '../../libs/icons/src',
       ),
+      '@monorepo-frontend/styles': path.resolve(
+        __dirname,
+        '../../libs/styles/src',
+      ),
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
         quietDeps: true,
+        includePaths: [
+          path.resolve(__dirname, '../../libs/styles/src'),
+          path.resolve(__dirname, '../../node_modules'),
+        ],
       },
     },
   },
