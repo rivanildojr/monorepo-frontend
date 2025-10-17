@@ -6,7 +6,7 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "exports": {
-    ".": {
+    "./main": {
       "import": "./src/main.scss",
       "require": "./src/main.scss"
     },
@@ -18,17 +18,13 @@
       "import": "./src/components-only.scss",
       "require": "./src/components-only.scss"
     },
-    "./components": {
-      "import": "./src/6-components/*.scss",
-      "require": "./src/6-components/*.scss"
-    },
     "./settings": {
-      "import": "./src/1-settings/_index.scss",
-      "require": "./src/1-settings/_index.scss"
+      "import": "./src/settings.scss",
+      "require": "./src/settings.scss"
     },
     "./tools": {
-      "import": "./src/2-tools/_index.scss",
-      "require": "./src/2-tools/_index.scss"
+      "import": "./src/tools.scss",
+      "require": "./src/tools.scss"
     }
   },
   "dependencies": {}
