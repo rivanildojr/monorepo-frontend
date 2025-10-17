@@ -5,7 +5,37 @@
     @click="showToast"
   >
     Show Toast
+
+    <Icon
+      name="far:house"
+      size="md"
+    />
   </button>
+
+  <Icon
+    name="svg:cvsign-icon"
+    size="lg"
+  />
+
+  <Icon
+    name="cvsign-icon"
+    size="lg"
+  />
+
+  <Icon
+    name="svg:vender-icon"
+    size="md"
+  />
+
+  <Icon
+    name="vender-icon"
+    size="lg"
+  />
+
+  <Icon
+    name="vender-icon"
+    size="xl"
+  />
 
   <select
     class="form-select"
@@ -25,6 +55,8 @@ import { getCurrentInstance } from 'vue';
 
 import NxWelcome from '@/cvcrm/app/NxWelcome.vue';
 import { useToast } from '@monorepo-frontend/core';
+
+import { Icon } from '@monorepo-frontend/icons';
 
 const toast = useToast();
 

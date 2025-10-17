@@ -2,6 +2,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
+import svgLoader from 'vite-svg-loader';
 
 export default defineConfig(() => ({
   root: __dirname,
@@ -14,7 +15,7 @@ export default defineConfig(() => ({
     port: 4300,
     host: 'localhost',
   },
-  plugins: [vue()],
+  plugins: [vue(), svgLoader()],
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
@@ -43,6 +44,10 @@ export default defineConfig(() => ({
     alias: {
       '@/cvcrm': path.resolve(__dirname, './src'),
       '@monorepo-frontend/core': path.resolve(__dirname, '../../libs/core/src'),
+      '@monorepo-frontend/icons': path.resolve(
+        __dirname,
+        '../../libs/icons/src',
+      ),
     },
   },
   css: {
