@@ -1,10 +1,15 @@
-$z-index-base: 0; // Elementos padrão
-$z-index-dropdown: 1000; // Menus dropdown
-$z-index-sticky: 1020; // Elementos com posição sticky
-$z-index-fixed: 1030; // Elementos fixos (ex.: cabeçalhos fixos)
-$z-index-modal-backdrop: 1040; // Fundo de modais
-$z-index-modal: 1050; // Modais
-$z-index-popover: 1060; // Popovers
-$z-index-tooltip: 1070; // Tooltips
-$z-index-toast: 1080; // Toast notifications
-$z-index-max: 1090; // Valor máximo para z-index personalizados
+// ARQUIVO GERADO AUTOMATICAMENTE - NÃO EDITAR MANUALMENTE APENAS VIA SCRIPT
+// Gerado a partir do script: libs/styles/scripts/generateSettings.ts
+// Para modificar, edite os tokens TypeScript e execute: pnpm generate:settings
+
+// Z-index
+$z-index-base: 0;
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+$z-index-toast: 1080;
+$z-index-max: 1090;

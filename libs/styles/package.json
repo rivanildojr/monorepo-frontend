@@ -25,7 +25,14 @@
     "./tools": {
       "import": "./src/tools.scss",
       "require": "./src/tools.scss"
+    },
+    "./tokens": {
+      "import": "./src/tokens/index.ts",
+      "require": "./src/tokens/index.ts"
     }
+  },
+  "scripts": {
+    "generate:settings": "tsx ./src/scripts/generateSettings.ts"
   },
   "dependencies": {}
 }

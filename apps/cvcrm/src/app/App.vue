@@ -59,6 +59,9 @@ import NxWelcome from '@/cvcrm/app/NxWelcome.vue';
 import { useToast } from '@monorepo-frontend/core';
 
 import { Icon } from '@monorepo-frontend/icons';
+import { tokens } from '@monorepo-frontend/styles/tokens';
+
+console.log('🚀 ~ tokens.border.md:', tokens.border.md);
 
 const toast = useToast();
 
