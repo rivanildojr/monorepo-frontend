@@ -5,6 +5,7 @@
   "dependencies": {
     "@monorepo-frontend/core": "workspace:*",
     "@monorepo-frontend/icons": "workspace:*",
-    "@monorepo-frontend/styles": "workspace:*"
+    "@monorepo-frontend/styles": "workspace:*",
+    "@monorepo-frontend/ui": "workspace:*"
   }
 }

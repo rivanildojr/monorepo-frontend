@@ -1,6 +1,5 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-// Import only the icons you need to reduce bundle size
 import {
   faUser,
   faHouse,
@@ -10,6 +9,7 @@ import {
   faComment,
   faPen,
   faCircleInfo,
+  faSpinner,
 } from '@fortawesome/pro-regular-svg-icons';
 
 import {
@@ -31,6 +31,7 @@ export function setupFontAwesome() {
     faComment,
     faPen,
     faCircleInfo,
+    faSpinner,
   );
 
   library.add(

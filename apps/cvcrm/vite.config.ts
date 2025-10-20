@@ -56,6 +56,7 @@ export default defineConfig(() => ({
         __dirname,
         '../../libs/styles/src/2-tools/_index.scss',
       ),
+      '@monorepo-frontend/ui': path.resolve(__dirname, '../../libs/ui/src'),
     },
   },
   css: {

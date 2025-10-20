@@ -8,6 +8,7 @@ export const fontAwesomeIcons = [
   'comment',
   'pen',
   'circle-info',
+  'spinner',
 
   // Brands
   'linkedin',

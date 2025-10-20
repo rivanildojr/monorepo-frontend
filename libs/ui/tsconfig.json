@@ -4,19 +4,13 @@
   "include": [],
   "references": [
     {
-      "path": "../../libs/ui"
+      "path": "../styles"
     },
     {
-      "path": "../../libs/styles"
+      "path": "../icons"
     },
     {
-      "path": "../../libs/icons"
-    },
-    {
-      "path": "../../libs/core"
-    },
-    {
-      "path": "./tsconfig.app.json"
+      "path": "./tsconfig.lib.json"
     },
     {
       "path": "./tsconfig.spec.json"
@@ -24,7 +18,7 @@
   ],
   "compilerOptions": {
     "paths": {
-      "@/cvcrm/*": ["./src/*"]
+      "@/ui/*": ["./src/*"]
     }
   }
 }

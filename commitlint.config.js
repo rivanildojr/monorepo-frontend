@@ -27,14 +27,14 @@ module.exports = {
         'ui',
         'core',
         'shared',
-        'store',
         'styles',
         'icons',
-        'storybook',
 
         // Apps
         'cvcrm',
         'portal-cliente',
+        'storybook',
+        'docs',
 
         // Configs
         'vscode',

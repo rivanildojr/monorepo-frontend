@@ -1,43 +1,45 @@
 <template>
   <h1 class="teste">Welcome to @monorepo-frontend/cvcrm!</h1>
 
-  <button
-    type="button"
-    class="btn btn-primary"
-    @click="showToast"
-  >
-    Show Toast
+  <div>
+    <button
+      type="button"
+      class="btn btn-primary"
+      @click="showToast"
+    >
+      Show Toast
+
+      <Icon
+        name="far:house"
+        size="md"
+      />
+    </button>
 
     <Icon
-      name="far:house"
+      name="svg:cvsign-icon"
+      size="lg"
+    />
+
+    <Icon
+      name="cvsign-icon"
+      size="lg"
+    />
+
+    <Icon
+      name="svg:vender-icon"
       size="md"
     />
-  </button>
 
-  <Icon
-    name="svg:cvsign-icon"
-    size="lg"
-  />
+    <Icon
+      name="vender-icon"
+      size="lg"
+    />
 
-  <Icon
-    name="cvsign-icon"
-    size="lg"
-  />
-
-  <Icon
-    name="svg:vender-icon"
-    size="md"
-  />
-
-  <Icon
-    name="vender-icon"
-    size="lg"
-  />
-
-  <Icon
-    name="vender-icon"
-    size="xl"
-  />
+    <Icon
+      name="vender-icon"
+      size="xl"
+    />
+  </div>
 
   <select
     class="form-select"
@@ -49,13 +51,18 @@
     <option value="3">Three</option>
   </select>
 
-  <NxWelcome title="@monorepo-frontend/cvcrm" />
+  <BaseButton
+    label="TESTE"
+    :loading="false"
+    class="btn btn-primary"
+  />
 </template>
 
 <script setup lang="ts">
 import { getCurrentInstance } from 'vue';
 
-import NxWelcome from '@/cvcrm/app/NxWelcome.vue';
+import { BaseButton } from '@monorepo-frontend/ui';
+
 import { useToast } from '@monorepo-frontend/core';
 
 import { Icon } from '@monorepo-frontend/icons';

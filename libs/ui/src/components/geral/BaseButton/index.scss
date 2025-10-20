@@ -1,0 +1,7 @@
+// estilo do botão base
+
+@use '@monorepo-frontend/styles/settings' as *;
+
+.cv-button {
+  font-size: $font-size-5xl;
+}

@@ -32,6 +32,9 @@ importers:
       vue:
         specifier: ^3.5.22
         version: 3.5.22(typescript@5.9.3)
+      vue-router:
+        specifier: ^4.6.3
+        version: 4.6.3(vue@3.5.22(typescript@5.9.3))
       vue-toastification:
         specifier: 2.0.0-rc.5
         version: 2.0.0-rc.5(vue@3.5.22(typescript@5.9.3))
@@ -201,12 +204,24 @@ importers:
       '@monorepo-frontend/styles':
         specifier: workspace:*
         version: link:../../libs/styles
+      '@monorepo-frontend/ui':
+        specifier: workspace:*
+        version: link:../../libs/ui
 
   libs/core: {}
 
   libs/icons: {}
 
   libs/styles: {}
+
+  libs/ui:
+    dependencies:
+      '@monorepo-frontend/icons':
+        specifier: workspace:*
+        version: link:../icons
+      '@monorepo-frontend/styles':
+        specifier: workspace:*
+        version: link:../styles
 
 packages:
 
@@ -1906,6 +1921,9 @@ packages:
 
   '@vue/compiler-ssr@3.5.22':
     resolution: {integrity: sha512-GdgyLvg4R+7T8Nk2Mlighx7XGxq/fJf9jaVofc3IL0EPesTE86cP/8DD1lT3h1JeZr2ySBvyqKQJgbS54IX1Ww==}
+
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
   '@vue/eslint-config-prettier@10.2.0':
     resolution: {integrity: sha512-GL3YBLwv/+b86yHcNNfPJxOTtVFJ4Mbc9UU3zR+KVoG7SwGTjPT+32fXamscNumElhcpXW3mT0DgzS9w32S7Bw==}
@@ -4612,6 +4630,11 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
+  vue-router@4.6.3:
+    resolution: {integrity: sha512-ARBedLm9YlbvQomnmq91Os7ck6efydTSpRP3nuOKCvgJOHNrhRoJDSKtee8kcL1Vf7nz6U+PMBL+hTvR3bTVQg==}
+    peerDependencies:
+      vue: ^3.5.0
+
   vue-toastification@2.0.0-rc.5:
     resolution: {integrity: sha512-q73e5jy6gucEO/U+P48hqX+/qyXDozAGmaGgLFm5tXX4wJBcVsnGp4e/iJqlm9xzHETYOilUuwOUje2Qg1JdwA==}
     peerDependencies:
@@ -6708,6 +6731,8 @@ snapshots:
     dependencies:
       '@vue/compiler-dom': 3.5.22
       '@vue/shared': 3.5.22
+
+  '@vue/devtools-api@6.6.4': {}
 
   '@vue/eslint-config-prettier@10.2.0(eslint@9.37.0(jiti@2.6.1))(prettier@3.6.2)':
     dependencies:
@@ -9643,6 +9668,11 @@ snapshots:
       semver: 7.7.3
     transitivePeerDependencies:
       - supports-color
+
+  vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.22(typescript@5.9.3)
 
   vue-toastification@2.0.0-rc.5(vue@3.5.22(typescript@5.9.3)):
     dependencies:
