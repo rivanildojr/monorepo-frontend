@@ -26,7 +26,6 @@ module.exports = {
         // Modulos
         'ui',
         'core',
-        'shared',
         'styles',
         'icons',
 
