@@ -1,0 +1,27 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "../../libs/ui"
+    },
+    {
+      "path": "../../libs/styles"
+    },
+    {
+      "path": "../../libs/icons"
+    },
+    {
+      "path": "../../libs/core"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@/storybook/*": ["./src/*"]
+    }
+  }
+}

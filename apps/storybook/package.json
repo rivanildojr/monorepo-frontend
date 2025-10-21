@@ -1,12 +1,20 @@
 {
-  "name": "@monorepo-frontend/cvcrm",
+  "name": "@monorepo-frontend/storybook",
   "version": "0.0.1",
   "type": "module",
   "private": true,
+  "scripts": {
+    "storybook:dev": "storybook dev -p 6006 --docs",
+    "storybook:build": "storybook build --docs"
+  },
   "dependencies": {
     "@monorepo-frontend/core": "workspace:*",
     "@monorepo-frontend/icons": "workspace:*",
     "@monorepo-frontend/styles": "workspace:*",
     "@monorepo-frontend/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/vue3-vite": "^9.1.13",
+    "storybook": "^9.1.13"
   }
 }
