@@ -1,12 +1,12 @@
 {
-  "name": "@monorepo-frontend/cvcrm",
+  "name": "@monorepo-frontend/portal-cliente",
   "version": "0.0.1",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
-    "cvcrm:dev": "nx serve cvcrm",
-    "cvcrm:build": "nx build cvcrm",
-    "cvcrm:test": "nx test cvcrm"
+    "portal-cliente:dev": "nx serve portal-cliente",
+    "portal-cliente:build": "nx build portal-cliente",
+    "portal-cliente:test": "nx test portal-cliente"
   },
   "dependencies": {
     "@monorepo-frontend/core": "workspace:*",

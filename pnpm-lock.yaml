@@ -214,6 +214,21 @@ importers:
         specifier: 2.0.0-alpha.12
         version: 2.0.0-alpha.12(@types/node@24.7.2)(axios@1.12.2)(jiti@2.6.1)(postcss@8.5.6)(sass@1.93.2)(tsx@4.20.6)(typescript@5.9.3)(yaml@2.8.1)
 
+  apps/portal-cliente:
+    dependencies:
+      '@monorepo-frontend/core':
+        specifier: workspace:*
+        version: link:../../libs/core
+      '@monorepo-frontend/icons':
+        specifier: workspace:*
+        version: link:../../libs/icons
+      '@monorepo-frontend/styles':
+        specifier: workspace:*
+        version: link:../../libs/styles
+      '@monorepo-frontend/ui':
+        specifier: workspace:*
+        version: link:../../libs/ui
+
   apps/storybook:
     dependencies:
       '@monorepo-frontend/core':
