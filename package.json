@@ -15,7 +15,10 @@
     "test:affected": "nx affected -t test",
     "generate:settings": "pnpm --filter @monorepo-frontend/styles generate:settings",
     "storybook:dev": "pnpm --filter @monorepo-frontend/storybook storybook:dev",
-    "storybook:build": "pnpm --filter @monorepo-frontend/storybook storybook:build"
+    "storybook:build": "pnpm --filter @monorepo-frontend/storybook storybook:build",
+    "docs:dev": "pnpm --filter @monorepo-frontend/docs docs:dev",
+    "docs:build": "pnpm --filter @monorepo-frontend/docs docs:build",
+    "docs:preview": "pnpm --filter @monorepo-frontend/docs docs:preview"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [

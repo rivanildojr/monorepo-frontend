@@ -20,6 +20,9 @@
     },
     {
       "path": "./apps/storybook"
+    },
+    {
+      "path": "./apps/docs"
     }
   ]
 }

@@ -22,6 +22,8 @@ export default [
       '**/*.bundle.js',
       '**/*.bundle.css',
       '**/.vscode/*',
+      'apps/docs/.vitepress/theme/**',
+      'apps/docs/.vitepress/cache/**',
     ],
   },
 
