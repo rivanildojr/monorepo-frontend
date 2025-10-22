@@ -5,7 +5,7 @@
     :class="[
       cvbuttonVariant,
       cvButtonSize,
-      { 'cvButton--loading': loading, 'cvButton--disabled': disabled },
+      { 'cv-button--loading': loading, 'cv-button--disabled': disabled },
     ]"
     :disabled="disabled || loading"
     v-bind="$attrs"
