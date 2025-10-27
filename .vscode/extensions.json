@@ -1,11 +1,11 @@
 {
   "recommendations": [
-    "nrwl.angular-console",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
     "Vue.volar",
-    "EditorConfig.EditorConfig",
+    "nrwl.angular-console",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
     "stylelint.vscode-stylelint",
-    "DavidAnson.vscode-markdownlint"
+    "DavidAnson.vscode-markdownlint",
+    "EditorConfig.EditorConfig"
   ]
 }

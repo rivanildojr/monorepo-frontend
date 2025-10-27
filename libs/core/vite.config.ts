@@ -24,6 +24,10 @@ export default defineConfig(() => ({
   resolve: {
     alias: {
       '@/core': path.resolve(__dirname, './src'),
+      '@monorepo-frontend/styles': path.resolve(
+        __dirname,
+        '../../libs/styles/src',
+      ),
     },
   },
   css: {

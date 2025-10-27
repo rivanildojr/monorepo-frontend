@@ -25,18 +25,18 @@ export default defineConfig({
     },
 
     sidebar: [
-      {
-        text: 'Design',
-        base: '/docs/design/',
-        collapsed: false,
-        items: [
-          {
-            text: 'Guia de Início',
-            collapsed: false,
-            items: [{ text: 'Introdução', link: '/markdown-examples/' }],
-          },
-        ],
-      },
+      // {
+      //   text: 'Design',
+      //   base: '/docs/design/',
+      //   collapsed: false,
+      //   items: [
+      //     {
+      //       text: 'Guia de Início',
+      //       collapsed: false,
+      //       items: [{ text: 'Introdução', link: '/markdown-examples/' }],
+      //     },
+      //   ],
+      // },
       {
         text: 'Frontend',
         base: '/docs/frontend/',
@@ -62,7 +62,28 @@ export default defineConfig({
               {
                 text: 'Tokens de Design',
                 collapsed: false,
-                items: [{ text: 'Cores', link: '/design-system/tokens/cores' }],
+                items: [
+                  { text: 'Visão Geral', link: '/design-system/tokens/' },
+                  { text: 'Bordas', link: '/design-system/tokens/bordas' },
+                  {
+                    text: 'Breakpoints',
+                    link: '/design-system/tokens/breakpoints',
+                  },
+                  { text: 'Cores', link: '/design-system/tokens/cores' },
+                  {
+                    text: 'Espaçamentos',
+                    link: '/design-system/tokens/espacamentos',
+                  },
+                  { text: 'Sombras', link: '/design-system/tokens/sombras' },
+                  {
+                    text: 'Tipografias',
+                    link: '/design-system/tokens/tipografias',
+                  },
+                  {
+                    text: 'Z-index',
+                    link: '/design-system/tokens/z-index',
+                  },
+                ],
               },
               {
                 text: 'Componentes',
@@ -75,6 +96,7 @@ export default defineConfig({
                 text: 'Estilos',
                 collapsed: true,
                 items: [
+                  { text: 'Visão Geral', link: '/design-system/estilos/' },
                   { text: 'ITCSS', link: '/design-system/estilos/itcss' },
                 ],
               },
@@ -88,17 +110,34 @@ export default defineConfig({
           {
             text: 'Configuração',
             collapsed: false,
-            items: [{ text: 'Visão Geral', link: '/configuracao/' }],
+            items: [{ text: 'Visão Geral', link: '/configuracoes/' }],
           },
           {
             text: 'Qualidade de Código',
             collapsed: false,
-            items: [{ text: 'Visão Geral', link: '/qualidade-codigo/' }],
+            items: [
+              { text: 'Visão Geral', link: '/qualidade-codigo/' },
+              { text: 'Eslint', link: '/qualidade-codigo/eslint.md' },
+              { text: 'Prettier', link: '/qualidade-codigo/prettier.md' },
+              { text: 'Stylelint', link: '/qualidade-codigo/stylelint.md' },
+              {
+                text: 'EditorConfig',
+                link: '/qualidade-codigo/editorconfig.md',
+              },
+              { text: 'Git Hooks', link: '/qualidade-codigo/git-hooks.md' },
+              { text: 'Commitlint', link: '/qualidade-codigo/commitlint.md' },
+            ],
           },
           {
             text: 'Guias Práticos',
             collapsed: false,
-            items: [{ text: 'Visão Geral', link: '/guias/' }],
+            items: [
+              { text: 'Visão Geral', link: '/guias/' },
+              {
+                text: 'Criar Componentes',
+                link: '/guias/criar-componente.md',
+              },
+            ],
           },
           {
             text: 'Core',
@@ -112,23 +151,26 @@ export default defineConfig({
           },
         ],
       },
-      {
-        text: 'Backend',
-        base: '/docs/backend/',
-        collapsed: false,
-        items: [
-          {
-            text: 'Guia de Início',
-            collapsed: false,
-            items: [{ text: 'Introdução', link: '/api-examples/' }],
-          },
-        ],
-      },
+      // {
+      //   text: 'Backend',
+      //   base: '/docs/backend/',
+      //   collapsed: false,
+      //   items: [
+      //     {
+      //       text: 'Guia de Início',
+      //       collapsed: false,
+      //       items: [{ text: 'Introdução', link: '/api-examples/' }],
+      //     },
+      //   ],
+      // },
       {
         text: 'Documentação',
         base: '/docs/documentacao/',
         collapsed: false,
-        items: [{ text: 'Visão Geral', link: '/' }],
+        items: [
+          { text: 'Visão Geral', link: '/' },
+          { text: 'Markdown', link: '/markdown.md' },
+        ],
       },
     ],
 
@@ -169,6 +211,11 @@ export default defineConfig({
         dateStyle: 'short',
         timeStyle: 'short',
       },
+    },
+
+    outline: {
+      label: 'Nesta página',
+      level: 'deep',
     },
   },
   vite: {

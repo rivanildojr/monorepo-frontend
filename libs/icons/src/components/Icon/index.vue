@@ -17,7 +17,6 @@ import type { SvgIcon } from '../../svg';
 
 import { IconProps } from '../../interface';
 import { iconsSize } from '../../constants';
-import { IconSize } from '../../types';
 
 const props = withDefaults(defineProps<IconProps>(), {
   size: 'md',

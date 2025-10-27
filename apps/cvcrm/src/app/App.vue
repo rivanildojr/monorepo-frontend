@@ -66,9 +66,10 @@ import { BaseButton } from '@monorepo-frontend/ui';
 import { useToast } from '@monorepo-frontend/core';
 
 import { Icon } from '@monorepo-frontend/icons';
-import { tokens } from '@monorepo-frontend/styles/tokens';
+import { useTheme } from '@monorepo-frontend/core';
 
-console.log('🚀 ~ tokens.border.md:', tokens.border.md);
+const theme = useTheme();
+console.log('Current theme:', theme.border['2xl']);
 
 const toast = useToast();
 

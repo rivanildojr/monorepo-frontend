@@ -7,6 +7,7 @@ export default [
   {
     ignores: [
       '**/dist',
+      '**/**/dist',
       '**/vite.config.*.timestamp*',
       '**/vitest.config.*.timestamp*',
       '**/node_modules',

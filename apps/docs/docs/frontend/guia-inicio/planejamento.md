@@ -26,7 +26,6 @@
 
 - [ ] Pinia
 - [ ] Pinia Plugins (Persistence + Devtools)
-- [ ] TanStack Query (cache de API)
 
 ## API & Dados
 
@@ -40,14 +39,12 @@
 - [ ] useAuth composable
 - [ ] Router guards
 - [ ] JWT token management
-- [ ] Refresh token strategy
 
 ## Monitoramento
 
 - [ ] Mixpanel (analytics)
 - [ ] Sentry (error tracking)
 - [ ] Web Vitals (performance)
-- [ ] Lighthouse CI
 
 ## Internacionalização
 
@@ -64,7 +61,6 @@
 
 - [ ] GitHub Actions (CI/CD)
 - [ ] Docker & Docker Compose
-- [ ] Renovate (atualização de deps)
 - [ ] Ambientes (dev, staging, prod)
 
 ## Variáveis de Ambiente
