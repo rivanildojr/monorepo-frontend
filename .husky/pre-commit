@@ -3,6 +3,4 @@
 # Executar lint-staged
 npx lint-staged
 
-# Gerar Design Tokens
-pnpm generate:settings
 
