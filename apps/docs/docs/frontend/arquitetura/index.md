@@ -15,7 +15,7 @@ Nossa arquitetura é regida por princípios de engenharia de software sólidos:
 
 ## 2. Estrutura de Monorepo (Nx + pnpm)
 
-O monorepo é a escolh para gerenciar nossos múltiplos painéis e bibliotecas.
+O monorepo é a escolha para gerenciar nossos múltiplos painéis e bibliotecas.
 
 ### 2.1. Vantagens do Monorepo
 
@@ -41,6 +41,12 @@ graph TD
 
 - **`apps`** **podem** depender de qualquer `lib`.
 - **`libs`** **não podem** depender de `apps`.
+
+Para visualizar a árvore de dependência do projeto, execute o comando abaixo:
+
+```bash
+pnpm nx graph
+```
 
 ## 3. Fluxo de Dados e Gerenciamento de Estado
 

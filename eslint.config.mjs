@@ -25,6 +25,8 @@ export default [
       '**/.vscode/*',
       'apps/docs/.vitepress/theme/**',
       'apps/docs/.vitepress/cache/**',
+      '**/*.md',
+      '**/*.mdx',
     ],
   },
 

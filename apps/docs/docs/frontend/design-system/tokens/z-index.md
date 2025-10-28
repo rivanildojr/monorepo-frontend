@@ -1,8 +1,8 @@
-# Design Tokens: Bordas
+# Design Tokens: Z-index
 
-Os tokens de bordas que garante consistência em toda a aplicação.
+Os tokens de z-index que garante consistência em toda a aplicação.
 
-## 2. Tokens de Bordas
+## 2. Tokens de Z-index
 
 | Nome (TS)                | Valor | Uso                     |
 | :----------------------- | :---- | :---------------------- |

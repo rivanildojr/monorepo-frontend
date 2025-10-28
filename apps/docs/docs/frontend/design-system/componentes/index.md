@@ -20,7 +20,8 @@ Cada componente deve ser um diretório auto-contido em `libs/ui/src/components/`
 libs/ui/src/components/
 ├── ComponentName/
 │ ├── index.vue ← Template e lógica principal
-│ ├── ComponentName.spec.ts ← Testes unitários
+│ ├── index.scss ← Estilo do componente
+│ ├── index.spec.ts ← Testes unitários
 └── index.ts ← Exporta o componente
 ```
 
@@ -52,7 +53,7 @@ Componentes que combinam múltiplos `Base*` ou outros componentes (ex: `InputGro
 ## 5. Como Contribuir
 
 1. **Crie a pasta** do novo componente em `libs/ui/src/components/`.
-2. **Crie os 4 arquivos** essenciais (`.vue`, `.spec.ts`).
+2. **Crie os 3 arquivos** essenciais (`.vue`, `.scss`, `.spec.ts`).
 3. **Exporte** o componente no `libs/ui/src/index.ts`.
 4. **Documente** o componente no Storybook com todas as suas variações.
 5. **Documente** o componente nessa documentação.

@@ -19,9 +19,9 @@
     "docs:dev": "pnpm --filter @monorepo-frontend/docs docs:dev",
     "docs:build": "pnpm --filter @monorepo-frontend/docs docs:build",
     "docs:preview": "pnpm --filter @monorepo-frontend/docs docs:preview",
-    "cvcrm:dev": "pnpm --filter @monorepo-frontend/cvcrm cvcrm:dev",
-    "cvcrm:build": "pnpm --filter @monorepo-frontend/cvcrm cvcrm:build",
-    "cvcrm:test": "pnpm --filter @monorepo-frontend/cvcrm cvcrm:test",
+    "gestor:dev": "pnpm --filter @monorepo-frontend/cvcrm gestor:dev",
+    "gestor:build": "pnpm --filter @monorepo-frontend/cvcrm gestor:build",
+    "gestor:test": "pnpm --filter @monorepo-frontend/cvcrm gestor:test",
     "portal-cliente:dev": "pnpm --filter @monorepo-frontend/portal-cliente portal-cliente:dev",
     "portal-cliente:build": "pnpm --filter @monorepo-frontend/portal-cliente portal-cliente:build",
     "portal-cliente:test": "pnpm --filter @monorepo-frontend/portal-cliente portal-cliente:test"

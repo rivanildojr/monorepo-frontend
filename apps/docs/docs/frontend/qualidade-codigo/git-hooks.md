@@ -11,9 +11,6 @@ Executado **antes** do commit ser criado.
 - **Ação**: Dispara o `lint-staged`.
 - **Objetivo**: Garantir que o código que está sendo commitado está formatado e sem erros de lint.
 
-- **Ação**: Dispara o `pnpm generate:settings`.
-- **Objetivo**: Garantir que os tokens de design estejam atualizados.
-
 ### `commit-msg` Hook
 
 Executado quando a mensagem de commit é criada.

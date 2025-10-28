@@ -31,10 +31,14 @@ pnpm docs:dev
 
 - Certifique-se de que sua mensagem de commit siga o padrão Conventional Commits (ex: docs(guia): corrigir link de instalacao).
 
-## 2. Atualizando o Menu de Navegação
+## 3. Atualizando o Menu de Navegação
 
 O menu de navegação (sidebar) é definido no arquivo de configuração do VitePress:
 
 - Arquivo: `apps/docs/.vitepress/config.ts`
 
 Se você adicionar uma nova seção ou um novo arquivo, lembre-se de adicioná-lo ao sidebar para que ele apareça no menu.
+
+## 4. Guia Rápido de Markdown
+
+Para dúvidas sobre a sintaxe, consulte o guia rápido: [Sintaxe Markdown](./markdown.md)

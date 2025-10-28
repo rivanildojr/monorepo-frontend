@@ -97,3 +97,27 @@ Cada módulo da aplicação possui uma cor associada:
 | `modules.atendimento`    | `Atendimento`    | `#da922c` |
 | `modules.relacionamento` | `Relacionamento` | `#0a73b3` |
 | `modules.operacoes`      | `Operações`      | `#5a5692` |
+
+## 5. Uso em TypeScript (JavaScript)
+
+```typescript
+// Exemplo de uso em um componente Vue
+import { useTheme } from '@monorepo-frontend/core';
+
+const theme = useTheme();
+
+const cardStyles = computed(() => ({
+  backgroundColor: theme.colors.primary[100],
+}));
+```
+
+## 6. Uso no SCSS
+
+```scss
+// Exemplo de uso em um componente SCSS
+@use '@monorepo-frontend/styles/settings' as *;
+
+.cv-button {
+  color: $cor-cinza-matiz-120;
+}
+```

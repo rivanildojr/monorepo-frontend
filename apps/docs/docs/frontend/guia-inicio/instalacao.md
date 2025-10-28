@@ -58,7 +58,7 @@ Utilizamos **Husky** para automatizar a qualidade do código antes do commit.
 
 ```bash
 # Instala os hooks do git (pre-commit, commit-msg)
-pnpm run prepare
+pnpm prepare
 ```
 
 ### Passo 5: Rodar a Aplicação Principal (Painel Gestor)
@@ -67,7 +67,7 @@ Para iniciar o desenvolvimento, utilize o comando abaixo para rodar o app princi
 
 ```bash
 # Inicia o painel-gestor
-pnpm run gestor:dev
+pnpm gestor:dev
 ```
 
 A aplicação estará disponível em `http://localhost:4200`.
@@ -78,10 +78,10 @@ Recomendamos rodar um lint e teste inicial para garantir que tudo está configur
 
 ```bash
 # Roda lint e tenta corrigir erros
-pnpm run lint:fix
+pnpm lint:fix
 
 # Roda todos os testes unitários
-pnpm run test:all
+pnpm test:all
 ```
 
 Se todos os comandos rodarem sem erro, seu ambiente está pronto!

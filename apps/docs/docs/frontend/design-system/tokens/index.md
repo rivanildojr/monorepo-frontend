@@ -39,7 +39,7 @@ Os tokens são definidos em **TypeScript** e organizados em categorias:
 
 O fluxo de trabalho garante que o código esteja sempre sincronizado com os tokens:
 
-1. **Definição**: O designer ou desenvolvedor define o token em um arquivo `.ts` (ex: `colors.ts`).
+1. **Definição**: O desenvolvedor junto com o designer define o token em um arquivo `.ts` (ex: `colors.ts`).
 2. **Geração**: Um script Node.js lê o arquivo `.ts` e gera o arquivo `.scss` correspondente.
 3. **Uso**:
    - **TypeScript**: Importa o token diretamente do arquivo `.ts`.
@@ -48,7 +48,7 @@ O fluxo de trabalho garante que o código esteja sempre sincronizado com os toke
 **Comando de Geração:**
 
 ```bash
-pnpm run generate:settings
+pnpm generate:settings
 ```
 
 Este comando é executado automaticamente antes de cada commit via Husky.
@@ -104,7 +104,7 @@ const cardStyles = computed(() => ({
 ### Uso em SCSS
 
 ```scss
-// libs/styles/src/6-objects/_button.scss
+// libs/styles/src/6-components/_button.scss
 @use '@monorepo-frontend/styles/settings' as *;
 
 .cv-button {

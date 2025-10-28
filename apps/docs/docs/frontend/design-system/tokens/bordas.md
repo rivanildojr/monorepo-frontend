@@ -12,7 +12,7 @@ Os tokens de bordas que garante consistência em toda a aplicação.
 | `border-md`   | 0.5rem   | Bordas média.         |
 | `border-lg`   | 0.75rem  | Bordas grandes.       |
 | `border-xl`   | 1rem     | Bordas extra grandes. |
-| `border-2xl`  | 1rem     | Bordas super grande.  |
+| `border-2xl`  | 1.5rem   | Bordas super grande.  |
 
 ## 2. Tokens de Bordas Radius
 
@@ -24,8 +24,8 @@ Os tokens de bordas que garante consistência em toda a aplicação.
 | `border-radius-md`   | 0.5rem   | Bordas arredondadas média.         |
 | `border-radius-lg`   | 0.75rem  | Bordas arredondadas grandes.       |
 | `border-radius-xl`   | 1rem     | Bordas arredondadas extra grandes. |
-| `border-radius-2xl`  | 1rem     | Bordas arredondadas super grande.  |
-| `border-radius-full` | 1rem     | Bordas arredondadas completamente. |
+| `border-radius-2xl`  | 1.5rem   | Bordas arredondadas super grande.  |
+| `border-radius-full` | 9999px   | Bordas arredondadas completamente. |
 
 ## 3. Uso em TypeScript (JavaScript)
 

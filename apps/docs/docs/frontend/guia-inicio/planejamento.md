@@ -19,8 +19,8 @@
 
 - [x] Storybook (componentes)
 - [x] VitePress (documentação técnica)
-- [ ] README.md completo
-- [ ] Guia de contribuição
+- [x] README.md completo
+- [x] Guia de contribuição
 
 ## Gerenciamento de Estado
 
@@ -29,7 +29,7 @@
 
 ## API & Dados
 
-- [ ] API Client robusto (Axios + Interceptors)
+- [x] API Client robusto (Axios + Interceptors)
 - [ ] TanStack Query (cache e sincronização)
 - [ ] Validação de formulários (VeeValidate + Yup)
 - [ ] Gerenciamento de datas (Day.js)

@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "cvcrm:dev": "nx serve cvcrm",
-    "cvcrm:build": "nx build cvcrm",
-    "cvcrm:test": "nx test cvcrm"
+    "gestor:dev": "nx serve cvcrm",
+    "gestor:build": "nx build cvcrm",
+    "gestor:test": "nx test cvcrm"
   },
   "dependencies": {
     "@monorepo-frontend/core": "workspace:*",
